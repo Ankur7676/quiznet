@@ -1,0 +1,28 @@
+
+.netlify
+node_modules
+dist
+
+# Build output and machine-local state
+.vercel/
+.output/
+.tanstack/
+.DS_Store
+*.log
+*.pid
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+*.db
+*.db-shm
+*.db-wal
+quiznet-c/server
+quiznet-c/client
+quiznet-c/*.exe
+quiznet-c/quiznet_scores.csv
+.grok/status
+
+# Generated submission/download archives
+*.zip
