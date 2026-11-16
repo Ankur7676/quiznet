@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/admin",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Admin · QuizNet",
+      "hasCanvas": false,
+      "bodyTextLen": 660,
+      "bodyTextHash": "3c3a8ff5206840d50d366ef99beffe06ed18120ecb09c9445f9b8624e03e8b6d",
+      "bodyTextPrefix": "QuizNet Overview Host a quiz Student · Join quiz HOST WORKSPACE ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/Users/aaravkhanal/Downloads/QuizNet/screenshots/redesign-admin.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Admin · QuizNet",
+      "hasCanvas": false,
+      "bodyTextLen": 603,
+      "bodyTextHash": "c7872e6ec4bda9daffd8d79247233edbe5d24df5e4edc08caff7008193632e7d",
+      "bodyTextPrefix": "QuizNet Overview Host a quiz Student · Join quiz HOST WORKSPACE ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/Users/aaravkhanal/Downloads/QuizNet/screenshots/redesign-admin-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/Users/aaravkhanal/Downloads/QuizNet/screenshots/redesign-admin.json"
+}

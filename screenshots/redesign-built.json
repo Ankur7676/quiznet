@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "QuizNet",
+      "hasCanvas": false,
+      "bodyTextLen": 1622,
+      "bodyTextHash": "e003d17c838db950e5779333a39deb7e3f7f5d1792d00b575927380abdb6af80",
+      "bodyTextPrefix": "QuizNet Overview Host a quiz Student · Join quiz Your classroom,",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/Users/aaravkhanal/Downloads/QuizNet/screenshots/redesign-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "QuizNet",
+      "hasCanvas": false,
+      "bodyTextLen": 1622,
+      "bodyTextHash": "e003d17c838db950e5779333a39deb7e3f7f5d1792d00b575927380abdb6af80",
+      "bodyTextPrefix": "QuizNet Overview Host a quiz Student · Join quiz Your classroom,",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/Users/aaravkhanal/Downloads/QuizNet/screenshots/redesign-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/Users/aaravkhanal/Downloads/QuizNet/screenshots/redesign-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
