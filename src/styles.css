@@ -1,0 +1,198 @@
+@import "tailwindcss";
+
+/* Design tokens — single source of truth. Components use these via utilities
+   (bg-surface, text-muted, border-line, bg-primary, ...). Dark values below. */
+@theme {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --color-bg: #f6f7f4;
+  --color-surface: #ffffff;
+  --color-fg: #182c25;
+  --color-muted: #66736b;
+  --color-line: #e0e6df;
+
+  --color-primary: #21664d;
+  --color-primary-ink: #ffffff;
+  --color-primary-soft: #e8f1e9;
+
+  --color-success: #15803d;
+  --color-success-soft: #e5f6ea;
+  --color-danger: #b91c1c;
+  --color-danger-soft: #fdeaea;
+  --color-warn: #b45309;
+  --color-warn-soft: #fef3e2;
+
+  --radius-card: 1.25rem;
+  --shadow-card: 0 1px 2px rgb(20 23 43 / 0.05), 0 8px 24px -12px rgb(20 23 43 / 0.12);
+
+  --animate-rise: rise 160ms ease-out both;
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html {
+    color-scheme: light;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@theme {
+  --color-ink: #183e30;
+  --color-ink-muted: #b7cdbf;
+  --color-lime: #d9edab;
+  --radius-panel: 1.75rem;
+}
+.app-shell {
+  max-width: 1184px;
+  margin: auto;
+  padding: 28px 32px 40px;
+}
+.app-header {
+  min-height: 64px;
+  border-bottom: 1px solid var(--color-line);
+  padding-bottom: 24px;
+}
+.app-nav {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.app-nav a {
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-muted);
+}
+.app-nav a[data-status="active"] {
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+}
+.hero-panel {
+  background: var(--color-ink);
+  color: var(--color-primary-ink);
+  border-radius: var(--radius-panel);
+  padding: 48px;
+}
+.hero-title {
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+  font-weight: 600;
+}
+.section-title {
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+.feature-card {
+  border: 1px solid var(--color-line);
+  border-radius: 20px;
+  background: var(--color-surface);
+  padding: 28px;
+}
+.page-footer {
+  border-top: 1px solid var(--color-line);
+  margin-top: 48px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 12px;
+  color: var(--color-muted);
+}
+.student-body {
+  max-width: 640px;
+  margin: 48px auto 0;
+}
+.student-intro {
+  background: var(--color-ink);
+  color: var(--color-primary-ink);
+  padding: 28px;
+  border-radius: 24px;
+  margin-bottom: 24px;
+}
+.student-intro p {
+  color: var(--color-ink-muted);
+}
+.question-panel {
+  border-left: 3px solid var(--color-primary);
+}
+@media (max-width: 640px) {
+  .app-shell {
+    padding: 20px 20px 32px;
+  }
+  .app-header {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-bottom: 18px;
+  }
+  .app-nav {
+    gap: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .app-nav a {
+    padding: 8px 12px;
+  }
+  .hero-panel {
+    padding: 28px 24px;
+  }
+  .feature-card {
+    padding: 24px;
+  }
+  .student-body {
+    margin-top: 28px;
+  }
+  .page-footer {
+    flex-direction: column;
+  }
+}
+
+.hero-cta {
+  background: var(--color-lime);
+  color: var(--color-ink);
+}
