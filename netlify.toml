@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = "dist/client"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # QuizNet has no sign-in; build the app with the auth gate off.
+  VITE_AUTH_ENABLED = "false"
