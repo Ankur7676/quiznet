@@ -1,0 +1,294 @@
+{
+  "title": "QuizNet question bank",
+  "notes": "The server serves the 10 lowest ids, in id order, to every student. The answer field never leaves the server before that question is submitted.",
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Computer Networks",
+      "text": "Before application data flows, TCP establishes a connection using which sequence?",
+      "options": {
+        "A": "SYN, SYN-ACK, ACK",
+        "B": "ACK, SYN, FIN",
+        "C": "FIN, FIN-ACK, ACK",
+        "D": "ARP, DNS, DHCP"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 2,
+      "topic": "Computer Networks",
+      "text": "Which statement about UDP is correct?",
+      "options": {
+        "A": "UDP retransmits every lost segment by default",
+        "B": "UDP is connectionless and does not guarantee delivery",
+        "C": "UDP always performs a three-way handshake",
+        "D": "UDP reserves a dedicated circuit for the whole session"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 3,
+      "topic": "Computer Networks",
+      "text": "A TCP or UDP port number identifies what on a host?",
+      "options": {
+        "A": "The MAC address of the network card",
+        "B": "A specific application process or service",
+        "C": "The default gateway only",
+        "D": "The length of the subnet mask"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 4,
+      "topic": "Computer Networks",
+      "text": "Which port is the default for unencrypted HTTP?",
+      "options": {
+        "A": "21",
+        "B": "22",
+        "C": "80",
+        "D": "443"
+      },
+      "answer": "C"
+    },
+    {
+      "id": 5,
+      "topic": "Computer Networks",
+      "text": "An IPv4 address primarily identifies what?",
+      "options": {
+        "A": "One program running inside a computer",
+        "B": "A host interface on an IP network",
+        "C": "A physical switch port and nothing else",
+        "D": "A single DNS cache entry"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 6,
+      "topic": "Computer Networks",
+      "text": "In the client-server model used by QuizNet, who decides the score?",
+      "options": {
+        "A": "Each client, because it draws the answer buttons",
+        "B": "The server, which checks the answer and stores the result",
+        "C": "The Wi-Fi access point",
+        "D": "Whichever host sends the first SYN segment"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 7,
+      "topic": "Computer Networks",
+      "text": "What is the main job of DNS?",
+      "options": {
+        "A": "Encrypt every TCP payload",
+        "B": "Translate hostnames into IP addresses",
+        "C": "Assign MAC addresses to NICs",
+        "D": "Fragment Ethernet frames"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 8,
+      "topic": "Security",
+      "text": "HTTPS protects ordinary HTTP by adding which protocol?",
+      "options": {
+        "A": "TLS",
+        "B": "FTP",
+        "C": "SMTP",
+        "D": "ICMP"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 9,
+      "topic": "Security",
+      "text": "A phishing attack mainly tries to do what?",
+      "options": {
+        "A": "Flood a link until the router reboots",
+        "B": "Trick a person into revealing a secret or running malware",
+        "C": "Change the TCP congestion window legally",
+        "D": "Duplicate a public IP across two continents"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 10,
+      "topic": "Python",
+      "text": "In Python's socket module, which type is used for TCP?",
+      "options": {
+        "A": "socket.SOCK_DGRAM",
+        "B": "socket.SOCK_STREAM",
+        "C": "socket.SOCK_RDM only",
+        "D": "socket.SOCK_PACKET"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 11,
+      "topic": "Computer Networks",
+      "text": "Routers forward packets using which OSI layer's addresses?",
+      "options": {
+        "A": "Physical layer",
+        "B": "Data-link layer only",
+        "C": "Network layer",
+        "D": "Session layer"
+      },
+      "answer": "C"
+    },
+    {
+      "id": 12,
+      "topic": "Computer Networks",
+      "text": "Which address is a private IPv4 address, not routed on the public Internet?",
+      "options": {
+        "A": "8.8.8.8",
+        "B": "192.168.1.10",
+        "C": "1.1.1.1",
+        "D": "142.250.183.14"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 13,
+      "topic": "Computer Networks",
+      "text": "After a TCP server calls bind(), which call waits for new connections?",
+      "options": {
+        "A": "listen(), then accept()",
+        "B": "connect(), then send()",
+        "C": "fork(), then exec()",
+        "D": "select() is the only legal next call"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 14,
+      "topic": "Computer Networks",
+      "text": "What does accept() return on a TCP server?",
+      "options": {
+        "A": "The original listening socket, reused for data",
+        "B": "A new connected socket for that one client",
+        "C": "A UDP port number",
+        "D": "The client's password"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 15,
+      "topic": "Computer Networks",
+      "text": "127.0.0.1 means which special IPv4 address?",
+      "options": {
+        "A": "The local loopback interface on this machine",
+        "B": "The default gateway",
+        "C": "A broadcast to the whole LAN",
+        "D": "An unassigned public address"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 16,
+      "topic": "Security",
+      "text": "In the CIA triad, confidentiality means what?",
+      "options": {
+        "A": "Data is hidden from people who are not allowed to see it",
+        "B": "Data is available even if a disk fails",
+        "C": "Data has not been modified in transit",
+        "D": "The server answers within 120 seconds"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 17,
+      "topic": "Security",
+      "text": "How does a cryptographic hash differ from encryption?",
+      "options": {
+        "A": "A hash is meant to be reversed with the same key",
+        "B": "A hash is one-way; encryption can be reversed with the proper key",
+        "C": "They are two names for the same operation",
+        "D": "A hash always produces a longer message than the input"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 18,
+      "topic": "Security",
+      "text": "A firewall's basic job is to do what?",
+      "options": {
+        "A": "Allow or block traffic according to rules",
+        "B": "Replace IP addresses with MAC addresses",
+        "C": "Compress every TCP payload",
+        "D": "Assign domain names"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 19,
+      "topic": "Python",
+      "text": "Why does QuizNet send messages with json instead of pickle?",
+      "options": {
+        "A": "pickle is faster and safer on untrusted sockets",
+        "B": "Unpickling untrusted bytes can execute attacker-controlled code",
+        "C": "JSON cannot represent strings",
+        "D": "pickle is required by the TCP standard"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 20,
+      "topic": "Python",
+      "text": "Why are QuizNet's SQL statements written with '?' placeholders?",
+      "options": {
+        "A": "So usernames cannot change the shape of the query",
+        "B": "Because SQLite rejects quoted strings",
+        "C": "To encrypt the database file",
+        "D": "Placeholders disable the primary key"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 21,
+      "topic": "Python",
+      "text": "Why can one Python process serve many QuizNet clients with threads?",
+      "options": {
+        "A": "Each thread blocks forever inside a single shared recv",
+        "B": "While one thread waits on the network, others can run",
+        "C": "Threads remove the need for a port number",
+        "D": "The GIL stops all socket reads"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 22,
+      "topic": "General Computing",
+      "text": "Which pair correctly matches the resource with its role?",
+      "options": {
+        "A": "RAM stores data only after power is removed",
+        "B": "The CPU executes instructions; RAM holds data the CPU is using",
+        "C": "A disk is faster than a register for every access",
+        "D": "The ALU is a network cable"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 23,
+      "topic": "Computer Networks",
+      "text": "Bandwidth and latency differ how?",
+      "options": {
+        "A": "Bandwidth is how much data can flow per second; latency is delay",
+        "B": "They are identical measurements in milliseconds",
+        "C": "Latency is measured only in megabits",
+        "D": "Bandwidth is the number of cables in the wall"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 24,
+      "topic": "Computer Networks",
+      "text": "QuizNet's JSON messages sit at which layer of the network stack, relative to TCP?",
+      "options": {
+        "A": "They replace the Internet Protocol",
+        "B": "They are an application-layer protocol carried inside TCP",
+        "C": "They are Ethernet frames",
+        "D": "They are physical voltages on the wire"
+      },
+      "answer": "B"
+    }
+  ]
+}
